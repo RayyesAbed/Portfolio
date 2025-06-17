@@ -1,5 +1,7 @@
 import "./App.css";
 import CoffeeLoader from "./components/loading/CoffeeLoader";
+import Navbar from "./components/navbar/Navbar";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
@@ -39,7 +41,15 @@ function App() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.8 }}
-          ></motion.div>
+          >
+            <BrowserRouter>
+              <Navbar />
+
+              <Routes>
+                <Route path="/" element={<h1>TEST WELCOME</h1>} />
+              </Routes>
+            </BrowserRouter>
+          </motion.div>
         )}
       </AnimatePresence>
     </>
