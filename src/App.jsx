@@ -1,7 +1,49 @@
 import "./App.css";
+import CoffeeLoader from "./components/loading/CoffeeLoader";
+import { AnimatePresence, motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 function App() {
-  return <></>;
+  const [isLoading, setIsLoading] = useState(false);
+
+  useEffect(() => {
+    const hasVisited = localStorage.getItem("hasVisited"); // If the user is visiting the page for the first time
+
+    if (!hasVisited) {
+      setIsLoading(true);
+
+      localStorage.setItem("hasVisited", "true");
+
+      setTimeout(() => {
+        setIsLoading(false);
+      }, 9000);
+    }
+  }, []);
+
+  return (
+    <>
+      <AnimatePresence mode="wait">
+        {isLoading ? (
+          <motion.div
+            key="loader"
+            initial={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1 }}
+          >
+            <CoffeeLoader />
+          </motion.div>
+        ) : (
+          <motion.div
+            key="main"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.8 }}
+          ></motion.div>
+        )}
+      </AnimatePresence>
+    </>
+  );
 }
 
 export default App;
