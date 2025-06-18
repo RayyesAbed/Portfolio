@@ -1,6 +1,7 @@
 import "./App.css";
 import CoffeeLoader from "./components/loading/CoffeeLoader";
 import Navbar from "./components/navbar/Navbar";
+import Welcome from "./pages/welcome/Welcome";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
@@ -46,7 +47,7 @@ function App() {
               <Navbar />
 
               <Routes>
-                <Route path="/" element={<h1>TEST WELCOME</h1>} />
+                <Route path="/" element={<Welcome />} />
               </Routes>
             </BrowserRouter>
           </motion.div>
