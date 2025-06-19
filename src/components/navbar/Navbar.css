@@ -55,3 +55,44 @@ nav {
   border-radius: 30px;
   z-index: 0;
 }
+
+.menu-icon {
+  display: none;
+}
+
+/* For screens smaller whose width is less than 768px*/
+
+@media screen and (max-width: 767px) {
+  #abed-logo-link {
+    margin-left: 40px;
+  }
+
+  #abed-logo {
+    max-width: 90%;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: normal;
+    height: unset;
+    position: relative;
+    width: 50%;
+    top: 170px;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .menu-icon {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    right: 40px;
+  }
+
+  .block {
+    display: block;
+    margin-top: -100px;
+  }
+}
