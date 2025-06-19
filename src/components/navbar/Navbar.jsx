@@ -1,17 +1,30 @@
 import "./Navbar.css";
 import AbedLogo from "/MyLogo.png";
+import DragHandleIcon from "@mui/icons-material/DragHandle";
 import { Link, NavLink, useLocation } from "react-router";
 import navigationItems from "../../constants/navigationItems";
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   const location = useLocation();
+
+  const toggleMenu = () => setIsMenuOpen((prev) => !prev);
+
+  const closeMenu = () => {
+    setTimeout(() => {
+      setIsMenuOpen(false);
+    }, 1000);
+  };
+
   return (
     <header>
       <Link to="/" id="abed-logo-link">
         <img src={AbedLogo} alt="Abed Logo" id="abed-logo" />
       </Link>
-      <nav>
+      <nav className={isMenuOpen ? "block" : "hidden"}>
         {navigationItems.map((navItem) => {
           const isActive = location.pathname === navItem.path;
           return (
@@ -23,13 +36,20 @@ const Navbar = () => {
                   transition={{ type: "spring", stiffness: 500, damping: 30 }}
                 />
               )}
-              <NavLink to={navItem.path} className="nav-item">
+              <NavLink
+                to={navItem.path}
+                className="nav-item"
+                onClick={closeMenu}
+              >
                 {navItem.name}
               </NavLink>
             </div>
           );
         })}
       </nav>
+      <div className="menu-icon" onClick={toggleMenu}>
+        <DragHandleIcon sx={{ fontSize: "30px" }} />
+      </div>
     </header>
   );
 };
