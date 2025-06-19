@@ -68,8 +68,14 @@
   #welcome section:first-child {
     border-right: none;
   }
+
+  #welcome-paragraph {
+    width: 110%;
+  }
+
   #my-image {
     border-bottom: 1px solid #6b6b6b;
     padding-bottom: 100px;
+    width: 200px;
   }
 }
