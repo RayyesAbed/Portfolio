@@ -2,6 +2,10 @@ import "./ProjectDetails.css";
 import projectData from "../../constants/projectData";
 import { useParams } from "react-router";
 import { motion } from "framer-motion";
+import {
+  imageAnimationVariants,
+  textAnimationVariants,
+} from "../../constants/animationVariants";
 
 const ProjectDetails = () => {
   const { projectName } = useParams(); // destructure the clicked project name
@@ -9,31 +13,40 @@ const ProjectDetails = () => {
   const projectDetails = projectData[projectName];
 
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{ duration: 0.3 }}
-      id="project-details"
-    >
+    <motion.div id="project-details">
       {/* Intro section */}
       <section>
-        <img
+        <motion.img
+          variants={imageAnimationVariants}
+          initial="initial"
+          animate="animate"
+          transition={imageAnimationVariants.transition}
           src={projectDetails.introductionImage}
           alt={projectDetails.iintroductionImageAlt}
         />
-        <div>
+        <motion.div
+          variants={textAnimationVariants}
+          initial="initial"
+          animate="animate"
+          transition={textAnimationVariants.transition}
+        >
           <h1>{projectDetails.introductionHeader}</h1>
-          <p>
+          <div>
             {projectDetails.introductionParagraph.map((paragraph) => (
-              <p>{paragraph}</p>
+              <p key={paragraph}>{paragraph}</p>
             ))}
-          </p>
-        </div>
+          </div>
+        </motion.div>
       </section>
       {/* Technologies Used section */}
       <section>
-        <div>
+        <motion.div
+          variants={textAnimationVariants}
+          initial="initial"
+          whileInView="animate"
+          transition={textAnimationVariants.transition}
+          viewport={{ once: true }}
+        >
           <h1>{projectDetails.technologiesHeader}</h1>
           <ol>
             {projectDetails.technologiesArray.map((technology) => (
@@ -46,23 +59,42 @@ const ProjectDetails = () => {
               </li>
             ))}
           </ol>
-        </div>
-        <img
+        </motion.div>
+        <motion.img
+          variants={imageAnimationVariants}
+          initial="initial"
+          whileInView="animate"
+          transition={imageAnimationVariants.transition}
+          viewport={{ once: true }}
           src={projectDetails.technologiesImage}
           alt={projectDetails.technologiesImageAlt}
         />
       </section>
       {/* Project Aim section */}
       <section>
-        <img src={projectDetails.aimImage} alt={projectDetails.aimImageAlt} />
-        <div>
+        <motion.img
+          variants={imageAnimationVariants}
+          initial="initial"
+          whileInView="animate"
+          transition={imageAnimationVariants.transition}
+          viewport={{ once: true }}
+          src={projectDetails.aimImage}
+          alt={projectDetails.aimImageAlt}
+        />
+        <motion.div
+          variants={textAnimationVariants}
+          initial="initial"
+          whileInView="animate"
+          transition={textAnimationVariants.transition}
+          viewport={{ once: true }}
+        >
           <h1>{projectDetails.aimHeader}</h1>
-          <p>
+          <div>
             {projectDetails.aimParagraph.map((paragraph) => (
-              <p>{paragraph}</p>
+              <p key={paragraph}>{paragraph}</p>
             ))}
-          </p>
-        </div>
+          </div>
+        </motion.div>
       </section>
       <section>
         {/* Project Links section */}
