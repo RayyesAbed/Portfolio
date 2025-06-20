@@ -26,7 +26,11 @@ const Navbar = () => {
       </Link>
       <nav className={isMenuOpen ? "block" : "hidden"}>
         {navigationItems.map((navItem) => {
-          const isActive = location.pathname === navItem.path;
+          const isActive =
+            navItem.path === "/projects"
+              ? location.pathname.startsWith("/projects")
+              : location.pathname === navItem.path;
+
           return (
             <div key={navItem.path} className="nav-item-wrapper">
               {isActive && (
