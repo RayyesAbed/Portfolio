@@ -2,6 +2,7 @@ import "./App.css";
 import CoffeeLoader from "./components/loading/CoffeeLoader";
 import Navbar from "./components/navbar/Navbar";
 import Welcome from "./pages/welcome/Welcome";
+import Projects from "./pages/projects/Projects";
 import Footer from "./components/footer/Footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
@@ -49,6 +50,7 @@ function App() {
 
               <Routes>
                 <Route path="/" element={<Welcome />} />
+                <Route path="/projects" element={<Projects />} />
               </Routes>
               <Footer />
             </BrowserRouter>
