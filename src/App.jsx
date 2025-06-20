@@ -3,6 +3,7 @@ import CoffeeLoader from "./components/loading/CoffeeLoader";
 import Navbar from "./components/navbar/Navbar";
 import Welcome from "./pages/welcome/Welcome";
 import Projects from "./pages/projects/Projects";
+import ProjectDetails from "./components/project/ProjectDetails";
 import Footer from "./components/footer/Footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
@@ -51,6 +52,10 @@ function App() {
               <Routes>
                 <Route path="/" element={<Welcome />} />
                 <Route path="/projects" element={<Projects />} />
+                <Route
+                  path="/projects/:projectName"
+                  element={<ProjectDetails />}
+                />
               </Routes>
               <Footer />
             </BrowserRouter>
