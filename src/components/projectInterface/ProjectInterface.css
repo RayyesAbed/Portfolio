@@ -1,0 +1,36 @@
+.project-interface {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  align-items: center;
+}
+
+.project-interface img {
+  width: 500px;
+  border-radius: 30px;
+  box-sizing: 0px 4px 16px black, inset 0px 4px 16px black;
+}
+
+.project-interface .project-headers {
+  margin-left: 25px;
+}
+
+/* development status text */
+
+.project-interface .project-headers h4 {
+  font-size: 12px;
+  color: #404040;
+}
+
+/* Project name */
+
+.project-interface .project-headers h2 {
+  font-size: 28px;
+  color: #000;
+}
+
+@media screen and (max-width: 768px) {
+  .project-interface img {
+    width: 80%;
+  }
+}
