@@ -3,6 +3,8 @@ import CoffeeLoader from "./components/loading/CoffeeLoader";
 import Navbar from "./components/navbar/Navbar";
 import Welcome from "./pages/welcome/Welcome";
 import Projects from "./pages/projects/Projects";
+import About from "./pages/about/About";
+import Contact from "./pages/contact/Contact";
 import ProjectDetails from "./components/project/ProjectDetails";
 import Footer from "./components/footer/Footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -56,6 +58,8 @@ function App() {
                   path="/projects/:projectName"
                   element={<ProjectDetails />}
                 />
+                <Route path="/about" element={<About />} />
+                <Route path="/contact" element={<Contact />} />
               </Routes>
               <Footer />
             </BrowserRouter>
