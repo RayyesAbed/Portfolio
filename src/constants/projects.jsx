@@ -1,4 +1,4 @@
-import PlanItImageInterface from "/PlanItImageInterface.png";
+import PlanItImageInterface from "/PlanItImageInterface.jpg";
 
 const projects = [
   {
