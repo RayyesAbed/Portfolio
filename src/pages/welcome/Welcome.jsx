@@ -41,8 +41,12 @@ const Welcome = () => {
             ways we can collaborate.
           </p>
           <p>Feel free to buy me a coffee, It would really make my day! </p>
-          <a id="fuel-link" href="#" target="_blank" rel="noopener noreferrer">
-            {/* I will add the real link later */}
+          <a
+            id="fuel-link"
+            href="https://buymeacoffee.com/abed_alrayyes"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={Coffee} alt="Coffee Icon" />
             <span> Fuel me</span>
           </a>
