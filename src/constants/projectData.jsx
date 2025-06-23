@@ -1,4 +1,5 @@
 import PlanItImage from "/PlanItLogo.webp";
+import PlanItTechnologies from "/PlanItTechnologies.jpg";
 import PlanItAimImage from "/PlanItAimImage.png";
 
 const projectData = {
@@ -19,7 +20,7 @@ const projectData = {
       `Currently PlanIt's code is available on GitHub. The website is soon to be released with a following iOS release later.`,
     ],
     technologiesHeader: "Technologies Used",
-    technologiesImage: undefined, // to be changed soon
+    technologiesImage: PlanItTechnologies,
     technologiesImageAlt: "Technologies Image",
     technologiesArray: [
       {
@@ -50,7 +51,13 @@ const projectData = {
         name: "GitHub",
         aim: "Remote Repository",
         reason:
-          "he most popular platform for hosting Git repositories, enabling seamless collaboration, version control, and continuous deployment options.",
+          "The most popular platform for hosting Git repositories, enabling seamless collaboration, version control, and continuous deployment options.",
+      },
+      {
+        name: "Postman",
+        aim: "API Testing",
+        reason:
+          "A popular API Testing tool that I used for testing both my REST and GraphQL APIs.",
       },
     ],
     aimHeader: "My Target",
