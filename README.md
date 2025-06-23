@@ -1,12 +1,8 @@
-# React + Vite
+# ABED Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my portfolio website - a personal space where I organize my story, work, and contact options into 4 sections:
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Welcome - A friendly introduction for visitors.
+2. Projects - Where I display the personal projects that I have been working on (currently developing PlanIt).
+3. About - A brief summary about my life story, how I started and how I became a full stack web developer, including my resume.
+4. Contact: Reach out to me by sending an E-Mail. You can also follow me on GitHub or LinkedIn.
