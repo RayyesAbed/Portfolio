@@ -5,6 +5,8 @@ import { Typewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
 
 const Welcome = () => {
+  document.title = "ABED | Welcome";
+
   return (
     <motion.div
       initial={{ opacity: 0 }}

@@ -3,6 +3,8 @@ import AboutImage from "/About.jpg";
 import { motion } from "framer-motion";
 
 const About = () => {
+  document.title = "ABED | About";
+
   return (
     <motion.div
       initial={{ opacity: 0 }}

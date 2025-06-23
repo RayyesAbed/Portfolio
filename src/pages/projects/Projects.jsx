@@ -4,6 +4,8 @@ import projects from "../../constants/projects";
 import { motion } from "framer-motion";
 
 const Projects = () => {
+  document.title = "ABED | Projects";
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
