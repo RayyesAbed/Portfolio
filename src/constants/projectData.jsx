@@ -4,6 +4,7 @@ import PlanItAimImage from "/PlanItAimImage.png";
 
 const projectData = {
   planit: {
+    title: "PlanIt",
     introductionHeader: "PlanIt, The Intro",
     introductionImage: PlanItImage,
     introductionImageAlt: "PlanIt Image",

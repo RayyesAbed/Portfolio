@@ -12,6 +12,8 @@ const ProjectDetails = () => {
 
   const projectDetails = projectData[projectName];
 
+  document.title = `ABED | Projects | ${projectDetails.title}`;
+
   return (
     <motion.div id="project-details">
       {/* Intro section */}
