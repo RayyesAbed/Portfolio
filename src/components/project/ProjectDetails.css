@@ -61,6 +61,8 @@ h1 {
 @media screen and (max-width: 768px) {
   #project-details {
     text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
   }
   #project-details section {
     flex-direction: column;
