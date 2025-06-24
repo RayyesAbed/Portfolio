@@ -81,9 +81,23 @@ nav {
     align-items: normal;
     height: unset;
     position: absolute;
-    width: 50%;
+    width: 100%;
     top: 190px;
-    left: 25%;
+    background-color: #ececec;
+    box-shadow: unset;
+    border-radius: 0;
+    border-bottom: 1px solid grey;
+  }
+
+  .nav-item {
+    background-color: #ececec;
+    border-radius: 0;
+    color: #282828;
+  }
+
+  .nav-highlight {
+    background-color: unset;
+    border-radius: unset;
   }
 
   .hidden {
