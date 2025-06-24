@@ -59,8 +59,7 @@
 
 /* Success and failure submission texts */
 
-#contact-form #successful-email-text,
-#contact-form #failure-email-text {
+#contact-form #email-text {
   color: white;
   width: 70%;
   text-align: center;
@@ -68,11 +67,11 @@
   border-radius: 30px;
 }
 
-#contact-form #successful-email-text {
+#contact-form .success {
   background-color: rgb(2, 153, 2);
 }
 
-#contact-form #failure-email-text {
+#contact-form .failure {
   background-color: rgb(153, 5, 2);
 }
 
