@@ -13,3 +13,14 @@
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
   object-fit: cover;
 }
+
+@media screen and (max-width: 768px) {
+  #about {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  #about img {
+    height: 45vh;
+  }
+}
