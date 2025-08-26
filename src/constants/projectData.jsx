@@ -73,7 +73,7 @@ const projectData = {
     aimImage: PlanItAimImage,
     aimImageAlt: "My Aim Image",
     website: "#", // to be changed later
-    githubRepo: "#", // to be changed soon
+    githubRepo: "https://github.com/RayyesAbed/PlanIt", // to be changed soon
   },
 };
 
