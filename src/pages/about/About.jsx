@@ -37,8 +37,10 @@ const About = () => {
         Developer.
       </p>
       <p>
-        You can take a look at my resume here: <a href="#">Resume &#8599;</a>{" "}
-        {/* Resume link to be added later */}
+        You can take a look at my resume here:
+        <a href="/resume-alrayyes.pdf" target="_blank">
+          Resume &#8599;
+        </a>
       </p>
     </motion.div>
   );
