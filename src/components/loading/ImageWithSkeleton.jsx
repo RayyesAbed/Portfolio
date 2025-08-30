@@ -8,6 +8,7 @@ const ImageWithSkeleton = ({
   isSkeletonCircle,
   imgSrc,
   imgAlt,
+  imgId,
 }) => {
   const [loaded, setLoaded] = useState(false);
 
@@ -27,6 +28,7 @@ const ImageWithSkeleton = ({
         alt={imgAlt}
         onLoad={() => setLoaded(true)}
         style={loaded ? { display: "block" } : { display: "none" }}
+        id={imgId}
       />
     </>
   );
