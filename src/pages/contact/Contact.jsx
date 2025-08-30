@@ -6,6 +6,7 @@ import ContactImage from "/Contact.jpg";
 import { useActionState } from "react";
 import sendEmail from "../../action/sendEmail";
 import { motion } from "framer-motion";
+import ImageWithSkeleton from "../../components/loading/ImageWithSkeleton";
 
 const Contact = () => {
   document.title = "ABED | Contact";
@@ -43,7 +44,13 @@ const Contact = () => {
         </form>
       </section>
       <section>
-        <img src={ContactImage} alt="Contact image" id="contact-image" />
+        <ImageWithSkeleton
+          height={530}
+          width={660}
+          imgSrc={ContactImage}
+          imgAlt="Contact image"
+          imgId="contact-image"
+        />
         <ul id="social-media-accounts">
           {socialMediaLinks.map((link, index) => (
             <a key={index} href={link.href} target="_blank">

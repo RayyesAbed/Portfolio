@@ -1,3 +1,4 @@
+import ImageWithSkeleton from "../../components/loading/ImageWithSkeleton";
 import "./About.css";
 import AboutImage from "/About.jpg";
 import { motion } from "framer-motion";
@@ -13,7 +14,12 @@ const About = () => {
       transition={{ duration: 0.3 }}
       id="about"
     >
-      <img src={AboutImage} alt="My About image" />
+      <ImageWithSkeleton
+        height="70vh"
+        width="100%"
+        imgSrc={AboutImage}
+        imgAlt="My About image"
+      />
       <h1>My Life</h1>
       <p>
         Since my childhood, I have always seen computers as a treasure. When I

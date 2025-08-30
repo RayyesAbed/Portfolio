@@ -3,6 +3,7 @@ import Coffee from "/Coffee.png";
 import Abdallah from "/Abdallah.png";
 import { Typewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
+import ImageWithSkeleton from "../../components/loading/ImageWithSkeleton";
 
 const Welcome = () => {
   document.title = "ABED | Welcome";
@@ -53,7 +54,14 @@ const Welcome = () => {
         </div>
       </section>
       <section>
-        <img src={Abdallah} alt="Abdallah Image" id="my-image" />
+        <ImageWithSkeleton
+          height={400}
+          width={400}
+          isSkeletonCircle={true}
+          imgSrc={Abdallah}
+          imgAlt="Abdallah Image"
+          imgId="my-image"
+        />
       </section>
     </motion.div>
   );
