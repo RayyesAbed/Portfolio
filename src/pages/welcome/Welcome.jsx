@@ -4,9 +4,12 @@ import Abdallah from "/Abdallah.png";
 import { Typewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
 import ImageWithSkeleton from "../../components/loading/ImageWithSkeleton";
+import { useTranslation } from "react-i18next";
 
 const Welcome = () => {
-  document.title = "ABED | Welcome";
+  const { t } = useTranslation();
+
+  document.title = t("welcome.title");
 
   return (
     <motion.div
@@ -29,19 +32,10 @@ const Welcome = () => {
           />
         </h2>
         <div id="welcome-paragraph">
-          <p>
-            Welcome to my website! I am Abdallah, a full stack web developer in
-            the making. You can also call me Abed.
-          </p>
-          <p>
-            Crafting websites is my passion! The idea behind developing a
-            product that could be a game changer in our lives, is mind-blowing.
-          </p>
-          <p>
-            Discover more about my projects and me in the navigation bar, and
-            ways we can collaborate.
-          </p>
-          <p>Feel free to buy me a coffee, It would really make my day! </p>
+          <p>{t("welcome.intro")}</p>
+          <p>{t("welcome.passion")}</p>
+          <p>{t("welcome.discover")}</p>
+          <p>{t("welcome.coffee")} </p>
           <a
             id="fuel-link"
             href="https://buymeacoffee.com/abed_alrayyes"
@@ -49,7 +43,7 @@ const Welcome = () => {
             rel="noopener noreferrer"
           >
             <img src={Coffee} alt="Coffee Icon" />
-            <span> Fuel me</span>
+            <span> {t("welcome.fuel-me")}</span>
           </a>
         </div>
       </section>
