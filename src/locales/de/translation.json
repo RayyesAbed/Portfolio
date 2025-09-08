@@ -6,5 +6,17 @@
     "discover": "Entdecken Sie mehr über mich in Projekte und Über mich Sektionen, und in Kontakt Sektion können wir zusammenarbeiten.",
     "coffee": "Falls Sie interesse haben, dann können Sie mir eine Kaffee kaufen, das wäre geschätzt",
     "fuel-me": "Tanken Sie mich"
+  },
+  "projects": {
+    "title": "ABED | Projekte",
+    "list": [
+      {
+        "projectName": "planit",
+        "projectHeader": "PlanIt - Meine Habit-Tracker App",
+        "developmentStatus": "Wird entwickelt",
+        "imgAlt": "PlanIt Foto",
+        "projectData": {}
+      }
+    ]
   }
 }
