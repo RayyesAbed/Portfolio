@@ -6,5 +6,17 @@
     "discover": "Discover more about my projects and me in the navigation bar, and ways we can collaborate.",
     "coffee": "Feel free to buy me a coffee, It would really make my day!",
     "fuel-me": "Fuel Me"
+  },
+  "projects": {
+    "title": "ABED | Projects",
+    "list": [
+      {
+        "projectName": "planit",
+        "projectHeader": "PlanIt - My Habit Journey Planner",
+        "developmentStatus": "Under Development",
+        "imgAlt": "PlanIt Image",
+        "projectData": {}
+      }
+    ]
   }
 }
