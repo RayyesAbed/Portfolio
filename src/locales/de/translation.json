@@ -18,5 +18,12 @@
         "projectData": {}
       }
     ]
+  },
+  "contact": {
+    "header": "Kontaktieren Sie mich",
+    "name": "Ihr Name",
+    "email": "Ihre Email",
+    "message": "Ihre Nachricht",
+    "send-button": "Senden"
   }
 }
