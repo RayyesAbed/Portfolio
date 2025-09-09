@@ -7,9 +7,12 @@ import { useActionState } from "react";
 import sendEmail from "../../action/sendEmail";
 import { motion } from "framer-motion";
 import ImageWithSkeleton from "../../components/loading/ImageWithSkeleton";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
   document.title = "ABED | Contact";
+
+  const { t } = useTranslation();
 
   const [state, formAction, isPending] = useActionState(sendEmail, {
     success: null,
@@ -26,12 +29,30 @@ const Contact = () => {
     >
       <section>
         <form action={formAction} id="contact-form">
-          <h1>Get in touch</h1>
-          <input type="text" name="name" placeholder="Your Name" required />
-          <input type="email" name="email" placeholder="Your Email" required />
-          <textarea placeholder="Your Message" name="message" required />
+          <h1>{t("contact.header")}</h1>
+          <input
+            type="text"
+            name="name"
+            placeholder={t("contact.name")}
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder={t("contact.email")}
+            required
+          />
+          <textarea
+            placeholder={t("contact.message")}
+            name="message"
+            required
+          />
           <button disabled={isPending}>
-            {isPending ? <CircularProgress color="gray" size={30} /> : "Submit"}
+            {isPending ? (
+              <CircularProgress color="gray" size={30} />
+            ) : (
+              t("contact.send-button")
+            )}
           </button>
           {state.message && (
             <p
