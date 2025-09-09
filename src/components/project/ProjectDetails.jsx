@@ -6,9 +6,12 @@ import {
   imageAnimationVariants,
   textAnimationVariants,
 } from "../../constants/animationVariants";
+import { useTranslation } from "react-i18next";
 
 const ProjectDetails = () => {
   const { projectName } = useParams(); // destructure the clicked project name
+
+  const { i18n } = useTranslation();
 
   const projectDetails = projectData[projectName];
 
@@ -24,7 +27,7 @@ const ProjectDetails = () => {
           animate="animate"
           transition={imageAnimationVariants.transition}
           src={projectDetails.introductionImage}
-          alt={projectDetails.iintroductionImageAlt}
+          alt={projectDetails.introductionImageAlt[i18n.language]}
         />
         <motion.div
           variants={textAnimationVariants}
@@ -32,11 +35,13 @@ const ProjectDetails = () => {
           animate="animate"
           transition={textAnimationVariants.transition}
         >
-          <h1>{projectDetails.introductionHeader}</h1>
+          <h1>{projectDetails.introductionHeader[i18n.language]}</h1>
           <div>
-            {projectDetails.introductionParagraph.map((paragraph) => (
-              <p key={paragraph}>{paragraph}</p>
-            ))}
+            {projectDetails.introductionParagraph[i18n.language].map(
+              (paragraph) => (
+                <p key={paragraph}>{paragraph}</p>
+              )
+            )}
           </div>
         </motion.div>
       </section>
@@ -49,17 +54,19 @@ const ProjectDetails = () => {
           transition={textAnimationVariants.transition}
           viewport={{ once: true }}
         >
-          <h1>{projectDetails.technologiesHeader}</h1>
+          <h1>{projectDetails.technologiesHeader[i18n.language]}</h1>
           <ol>
-            {projectDetails.technologiesArray.map((technology) => (
-              <li key={technology.name}>
-                <span style={{ fontWeight: 700 }}>{technology.name}</span>
-                <span> - </span>
-                <span>{technology.aim}</span>
-                <span> - </span>
-                <span>{technology.reason}</span>
-              </li>
-            ))}
+            {projectDetails.technologiesArray[i18n.language].map(
+              (technology) => (
+                <li key={technology.name}>
+                  <span style={{ fontWeight: 700 }}>{technology.name}</span>
+                  <span> - </span>
+                  <span>{technology.aim}</span>
+                  <span> - </span>
+                  <span>{technology.reason}</span>
+                </li>
+              )
+            )}
           </ol>
         </motion.div>
         <motion.img
@@ -69,7 +76,7 @@ const ProjectDetails = () => {
           transition={imageAnimationVariants.transition}
           viewport={{ once: true }}
           src={projectDetails.technologiesImage}
-          alt={projectDetails.technologiesImageAlt}
+          alt={projectDetails.technologiesImageAlt[i18n.language]}
         />
       </section>
       {/* Project Aim section */}
@@ -81,7 +88,7 @@ const ProjectDetails = () => {
           transition={imageAnimationVariants.transition}
           viewport={{ once: true }}
           src={projectDetails.aimImage}
-          alt={projectDetails.aimImageAlt}
+          alt={projectDetails.aimImageAlt[i18n.language]}
         />
         <motion.div
           variants={textAnimationVariants}
@@ -90,9 +97,9 @@ const ProjectDetails = () => {
           transition={textAnimationVariants.transition}
           viewport={{ once: true }}
         >
-          <h1>{projectDetails.aimHeader}</h1>
+          <h1>{projectDetails.aimHeader[i18n.language]}</h1>
           <div>
-            {projectDetails.aimParagraph.map((paragraph) => (
+            {projectDetails.aimParagraph[i18n.language].map((paragraph) => (
               <p key={paragraph}>{paragraph}</p>
             ))}
           </div>
