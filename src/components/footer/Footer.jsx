@@ -1,9 +1,13 @@
+import { useTranslation } from "react-i18next";
 import LanguageSelector from "../languageSelector/LanguageSelector";
 import "./Footer.css";
 import AbedLogoInverse from "/MyLogoInverse.png";
 
 const Footer = () => {
   const year = new Date().getFullYear();
+
+  const { t } = useTranslation();
+
   return (
     <footer>
       <div className="footer-sections">
@@ -12,7 +16,9 @@ const Footer = () => {
           alt="Abed Logo Inverse"
           id="abed-logo-inverse"
         />
-        <p id="copyright-text">Copyright {year} ABED, All Rights Reserved</p>
+        <p id="copyright-text">
+          &copy; Copyright {year} ABED. {t("footer")}
+        </p>
         <LanguageSelector />
       </div>
       <div className="footer-sections">
