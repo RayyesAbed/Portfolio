@@ -25,5 +25,14 @@
     "email": "Your Email",
     "message": "Your Message",
     "send-button": "Send"
+  },
+  "about": {
+    "header": "My Life",
+    "text1": "Since my childhood, I have always seen computers as a treasure. When I was 15, I learned HTML for the first time and the experience of writing my first website and the browser rendering it, was mind-blowing, a true game changer. it felt like I had discovered a hidden superpower inside my laptop.",
+    "text2": "As I entered the university, I chose Computer Engineering as my major and began learning about core programming concepts like data structures, algorithms, and more. Those foundational courses had a huge impact on me and inspired my decision to transition fully into Computer Science.",
+    "text3": "Afterwards I took a course in frontend development with React and not long after, I found an internship where I was introduced to both frontend and backend development. This is where I found my passion, and this is where I remembered my young self but this time, I found my path. Thanks to this experience, I decided to pursue a career a Full Stack Web Developer.",
+    "resume-paragraph": "You can take a look at my resume here: ",
+    "resume-text": "Resume",
+    "resume-link": "/resume-alrayyes.pdf"
   }
 }
