@@ -10,9 +10,9 @@ import ImageWithSkeleton from "../../components/loading/ImageWithSkeleton";
 import { useTranslation } from "react-i18next";
 
 const Contact = () => {
-  document.title = "ABED | Contact";
-
   const { t } = useTranslation();
+
+  document.title = t("contact.title");
 
   const [state, formAction, isPending] = useActionState(sendEmail, {
     success: null,
