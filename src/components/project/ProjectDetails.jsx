@@ -15,7 +15,7 @@ const ProjectDetails = () => {
 
   const projectDetails = projectData[projectName];
 
-  document.title = `ABED | Projects | ${projectDetails.title}`;
+  document.title = `${projectDetails.title[i18n.language]}`;
 
   return (
     <motion.div id="project-details">
