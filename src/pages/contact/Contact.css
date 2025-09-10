@@ -117,7 +117,7 @@
   }
 
   #contact-image {
-    display: none;
+    display: none !important;
   }
 
   #social-media-accounts {
