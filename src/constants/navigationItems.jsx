@@ -1,8 +1,8 @@
 const navigationItems = [
-  { path: "/", name: "Welcome" },
-  { path: "/projects", name: "Projects" },
-  { path: "/about", name: "About" },
-  { path: "/contact", name: "Contact" },
+  { path: "/", name: "navigation-bar.welcome" },
+  { path: "/projects", name: "navigation-bar.projects" },
+  { path: "/about", name: "navigation-bar.about" },
+  { path: "/contact", name: "navigation-bar.contact" },
 ];
 
 export default navigationItems;
