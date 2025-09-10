@@ -5,11 +5,14 @@ import { Link, NavLink, useLocation } from "react-router";
 import navigationItems from "../../constants/navigationItems";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const location = useLocation();
+
+  const { t } = useTranslation();
 
   const toggleMenu = () => setIsMenuOpen((prev) => !prev);
 
@@ -45,7 +48,7 @@ const Navbar = () => {
                 className="nav-item"
                 onClick={closeMenu}
               >
-                {navItem.name}
+                {t(navItem.name)}
               </NavLink>
             </div>
           );
