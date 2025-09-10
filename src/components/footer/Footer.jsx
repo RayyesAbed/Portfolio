@@ -1,3 +1,4 @@
+import LanguageSelector from "../languageSelector/LanguageSelector";
 import "./Footer.css";
 import AbedLogoInverse from "/MyLogoInverse.png";
 
@@ -12,6 +13,7 @@ const Footer = () => {
           id="abed-logo-inverse"
         />
         <p id="copyright-text">Copyright {year} ABED, All Rights Reserved</p>
+        <LanguageSelector />
       </div>
       <div className="footer-sections">
         <p id="binary">
