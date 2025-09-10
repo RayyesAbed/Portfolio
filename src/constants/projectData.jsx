@@ -4,7 +4,10 @@ import PlanItAimImage from "/PlanItAimImage.png";
 
 const projectData = {
   planit: {
-    title: "PlanIt",
+    title: {
+      en: "ABED | Projects | PlanIt",
+      de: "ABED | Projekte | PlanIt",
+    },
     introductionHeader: {
       en: "PlanIt, The Intro",
       de: "PlanIt, die Einführung",
