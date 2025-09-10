@@ -28,6 +28,7 @@
     "send-button": "Send"
   },
   "about": {
+    "title": "ABED | About",
     "header": "My Life",
     "text1": "Since my childhood, I have always seen computers as a treasure. When I was 15, I learned HTML for the first time and the experience of writing my first website and the browser rendering it, was mind-blowing, a true game changer. it felt like I had discovered a hidden superpower inside my laptop.",
     "text2": "As I entered the university, I chose Computer Engineering as my major and began learning about core programming concepts like data structures, algorithms, and more. Those foundational courses had a huge impact on me and inspired my decision to transition fully into Computer Science.",
