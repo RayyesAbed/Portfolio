@@ -1,4 +1,10 @@
 {
+  "navigation-bar": {
+    "welcome": "Welcome",
+    "projects": "Projects",
+    "about": "About",
+    "contact": "Contact"
+  },
   "welcome": {
     "title": "ABED | Welcome",
     "intro": "I am Abdallah, a full stack web developer in the making. You can also call me Abed.",
