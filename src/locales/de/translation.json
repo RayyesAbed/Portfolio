@@ -1,4 +1,10 @@
 {
+  "navigation-bar": {
+    "welcome": "Wilkommen",
+    "projects": "Projekte",
+    "about": "Über mich",
+    "contact": "Kontakt"
+  },
   "welcome": {
     "title": "ABED | Wilkommen",
     "intro": "Mein Name ist Abdallah, ein zukünftiger Full-Stack-Webentwickler. Sie können mich auch Abed nennen.",
