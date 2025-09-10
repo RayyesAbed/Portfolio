@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 const About = () => {
   const { t } = useTranslation();
 
-  document.title = "ABED | About";
+  document.title = t("about.title");
 
   return (
     <motion.div
