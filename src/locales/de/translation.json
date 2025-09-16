@@ -1,4 +1,8 @@
 {
+  "loading-page": [
+    "Jetzt fülle ich meinen Kaffee...",
+    "Dann trinke ich, werde fast bereit!"
+  ],
   "navigation-bar": {
     "welcome": "Wilkommen",
     "projects": "Projekte",
